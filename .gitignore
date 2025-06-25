@@ -1,0 +1,19 @@
+# Python/Django
+*.pyc
+__pycache__/
+
+.env
+*.log
+venv/
+env/
+media/
+static/
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+
+# IDE/Editor specific
+.idea/
+.vscode/
