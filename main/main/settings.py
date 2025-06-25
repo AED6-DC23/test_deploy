@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-98r+^nd@$(t_ll&xiabp%n3-9m2afx(nb)u_*92&mlex@)*6+a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://itdesigners.online', 'https://www.itdesigners.online', '83-166-244-209']
 
 
 # Application definition
@@ -119,8 +119,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/itdesigners.online/test_deploy/main/staticfiles/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = '/var/www/itdesigners.online/test_deploy/main/media/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -136,7 +139,6 @@ REST_FRAMEWORK = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://itdesigners.online",
+    "https://www.itdesigners.online",
 ]
-CORS_ALLOW_CREDENTIALS = True 
